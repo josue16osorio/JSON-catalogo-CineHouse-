@@ -1,4 +1,4 @@
-
+  const fs=require('fs')
 let catalogo=require('./database/catalogo.json')
 //const fs=require('fs')
 //fs.writeFileSync('./database/catalogo.json'.json)
@@ -23,7 +23,7 @@ function adicionaFilme(filme){
     catalogo.catalogo.push(filme)
     
     console.log("Filme adicionado com sucesso!")
-    const fs=require('fs')
+  
     //console.log(catalogo.catalogo)
     const json= JSON.stringify( catalogo)
    
